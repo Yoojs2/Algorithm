@@ -142,30 +142,40 @@ void GitTest()
 }
 
 
-int solution2(vector<int> number) {
+
+
+int solution22(vector<int> number) {
 	int answer = 0;
 
 	for (int i = 0; i < number.size() - 2; i++)
 	{
-		
 		for (int j = i + 1; j < number.size() - 1; j++)
 		{
 			for (int k = j + 1; k < number.size(); k++)
 			{
+				std::cout << i << " " << j << " " << k << std::endl;
+								
 				if (number[i] + number[j] + number[k] == 0)
 				{
 					answer++;
-				}				
+				}					
 			}
 		}
+
 	}
-				
 
 	return answer;
 }
 
 int main()
 {
+	
+
+	vector<int> number = { -2, 3, 0, 2, -5 };
+
+	int answer2 = solution22(number);
+	
+	
 	
 	
 	std::vector<std::vector<std::string>> data = {
@@ -203,10 +213,7 @@ int main()
 
 	
 	
-	
-	vector<int> number = { -2, 3, 0, 2, -5 };
-	
-	int answer2 = solution2(number);
+
 	
 	
 	
