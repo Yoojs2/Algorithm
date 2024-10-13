@@ -144,6 +144,7 @@ void GitTest()
 
 
 
+//완전 탐색 3중 루프 
 int solution22(vector<int> number) {
 	int answer = 0;
 
@@ -171,10 +172,12 @@ int main()
 {
 	
 
+	
+	//------완전 탐새 3중 루프---------//
 	vector<int> number = { -2, 3, 0, 2, -5 };
 
 	int answer2 = solution22(number);
-	
+	//-----------------------------//
 	
 	
 	
