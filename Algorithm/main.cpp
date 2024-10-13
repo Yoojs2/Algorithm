@@ -138,7 +138,7 @@ vector<string> solution(vector<string> players, vector<string> callings)
 
 void GitTest()
 {
-	// 지금 다시 노트북에서 저장 // 다시 한번 더 해보자 
+	// 제대로 되고있는건지 확인 함   
 }
 
 
