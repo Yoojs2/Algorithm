@@ -138,7 +138,7 @@ vector<string> solution(vector<string> players, vector<string> callings)
 
 void GitTest()
 {
-	//방금 변경함 //한번더 테스트 
+	// 지금 다시 노트북에서 저장
 }
 
 
@@ -152,9 +152,7 @@ int main()
 	
 	result = solution(players, callings);
 	
-	
-
-	
+		
 	
 	RunPractice();
 
