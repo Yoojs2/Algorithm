@@ -168,25 +168,39 @@ int main()
 {
 	
 	
+	std::vector<std::vector<std::string>> data = {
+		{ "AAA", "BBB", "CCC" },
+		{ "가가가", "나나나", "다다다" },
+		{ "111", "222", "333" }
+	};
+	
+	
+	for (int i = 0; i < data.size(); i++)
+	{
+		for (int j = 0; j < data[i].size(); j++)
+		{
+			std::cout << data[i][j] << " ";
+		}
+
+		//std::cout << std::endl;
+	}
+	
+	
 	
 	for (size_t i = 1; i < 3; i++)
-	{
-		cout << " i : " << i << std::endl;
-
+	{	
 		for (size_t j = 10; j < 13; j++)
-		{
-			cout << " j : " << j << std::endl;
-
-			for (size_t k = 20; k < 23; i++)
+		{		
+			for (size_t k = 20; k < 23; k++)
 			{
-				cout << " k : " << k << std::endl;
-	
+				std::cout << "i: " << i << ", j: " << j << ", k: " << k << std::endl;	
 			}
 		}
 	}
 	
 	
-	
+	return 0;
+
 	
 	
 	
