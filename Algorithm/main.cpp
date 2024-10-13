@@ -142,10 +142,65 @@ void GitTest()
 }
 
 
+int solution2(vector<int> number) {
+	int answer = 0;
 
+	for (int i = 0; i < number.size() - 2; i++)
+	{
+		
+		for (int j = i + 1; j < number.size() - 1; j++)
+		{
+			for (int k = j + 1; k < number.size(); k++)
+			{
+				if (number[i] + number[j] + number[k] == 0)
+				{
+					answer++;
+				}				
+			}
+		}
+	}
+				
+
+	return answer;
+}
 
 int main()
 {
+	
+	
+	
+	for (size_t i = 1; i < 3; i++)
+	{
+		cout << " i : " << i << std::endl;
+
+		for (size_t j = 10; j < 13; j++)
+		{
+			cout << " j : " << j << std::endl;
+
+			for (size_t k = 20; k < 23; i++)
+			{
+				cout << " k : " << k << std::endl;
+	
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	vector<int> number = { -2, 3, 0, 2, -5 };
+	
+	int answer2 = solution2(number);
+	
+	
+	
+	
+	
+	
+	
+	
 	vector<string> players = {"mumu", "soe", "poe", "kai", "mine"};
 	vector<string> callings = { "mumu", "kai", "mine", "soe", "poe" };
 	vector<string> result;
