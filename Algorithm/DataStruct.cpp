@@ -20,8 +20,7 @@ void VectorExample()
 	scores[2] = 95;
 	std::cout << "\nAfter updation, Student 3 : " << scores[2] << " points\n";
 
-
-
+	
 
 
 }
