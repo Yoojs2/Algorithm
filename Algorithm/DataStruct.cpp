@@ -3,7 +3,9 @@
 #include <stack>
 #include <queue>
 #include <unordered_map>
+#include <utility>
 
+using namespace std;
 
 //벡터를 사용해야하는 상황
 //임의 접근이 빠름
@@ -19,11 +21,52 @@ void VectorExample()
 
 	scores[2] = 95;
 	std::cout << "\nAfter updation, Student 3 : " << scores[2] << " points\n";
-
-	
-
-
 }
+
+
+//Map 대신 사용해야하는 이유
+//순서가 중요하지 않은경우
+//데이터 양이 적을 때
+//정렬이 필요 없는 경우
+//"키 값이 중복 될 수 있는 경우" <-- 그냥 보통 이때 많이 사용함
+//"Map은 내부적으로 균형 트리를 이용하고" Vector Pair는 연속적인 데이터공간에 할당함
+void VectorPairExample()
+{
+	//#include <utility
+
+	vector<pair<int, string>> queue;
+
+	queue.push_back({1, "Alice"});
+	queue.push_back({ 2, "Bob" });
+	queue.push_back({ 3, "Charlie" });
+
+	for (const auto& person : queue)
+	{
+		cout << "Order : " << person.first << ", Name : " << person.second;
+	}
+	
+	std::cout << "\n";
+
+	//index로 접근 가능
+	string temp = queue[0].second;
+	
+	cout << "temp : " << temp << "\n";
+	std::cout << "\n";
+
+	//2차원 배열처럼 접근은 불가능함
+	//string temp = queue[0][1];
+	
+	//요소 삭제, 1번째 index 삭제
+	queue.erase(queue.begin() + 1);
+	
+	//범위 지정 삭제 // 처음부터 그다음 3개 (처음 포함)
+	queue.erase(queue.begin(), queue.begin() + 3);
+	
+	//마지막 요소 삭제, 이름에 Back이 있잖아 이렇게 뒤에꺼 지우는건 이유가 있겠지 
+	queue.pop_back();	
+	
+}
+
 
 //중간 삽입과 삭제가 빈번한 상황에서 유리하며, 대기열 관리 같은 시나리오에 적합
 void ListExample()
@@ -97,6 +140,8 @@ void QueueExample()
 	}
 }
 
+
+
 int unordered_map_Example()
 {
 	// 1.선언
@@ -138,5 +183,5 @@ int unordered_map_Example()
 
 void RunDataStructTest()
 {
-
+	VectorPairExample();
 }

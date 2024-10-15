@@ -168,10 +168,43 @@ int solution22(vector<int> number) {
 	return answer;
 }
 
+
+
+vector<int> FindDiver(int n)
+{
+	vector<int> result;
+
+	for (int i = 1; i <= n; i++)
+	{
+		if (n % i == 0)
+		{
+			result.push_back(i);
+		}
+	}
+
+	return result;
+}
+
+
+
 int main()
 {
 	
+	
+	vector<int> result = FindDiver(18);
 
+	for (auto i : result)
+	{
+		cout << i << " , " ;
+	}
+	
+	
+	
+	
+	
+	RunDataStructTest();
+
+	return 0;
 	
 	//------완전 탐새 3중 루프---------//
 	vector<int> number = { -2, 3, 0, 2, -5 };
@@ -224,12 +257,7 @@ int main()
 	
 	
 	
-	
-	vector<string> players = {"mumu", "soe", "poe", "kai", "mine"};
-	vector<string> callings = { "mumu", "kai", "mine", "soe", "poe" };
-	vector<string> result;
-	
-	result = solution(players, callings);
+
 	
 		
 	
