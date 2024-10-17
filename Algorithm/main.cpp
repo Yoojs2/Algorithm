@@ -190,6 +190,25 @@ vector<int> FindDiver(int n)
 int main()
 {
 	
+	vector<int> aa = { 1, 2, 3, 4, 5, 6 };
+	
+	for (int i = 0; i < aa.size(); i++)
+	{
+		if (aa[i] == 2)
+		{
+			i = 0;
+		}
+
+		cout << aa[i] << endl;
+	}
+	
+	
+	
+	
+	
+	RunGrammer();
+	
+	return 0;
 	
 	vector<int> result = FindDiver(18);
 

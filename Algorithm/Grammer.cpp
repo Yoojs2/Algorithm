@@ -72,6 +72,10 @@ void StringTest()
 	str.erase(5, 6);
 	cout << "After erase : " << str << "\n";
 
+	string test = "banana";
+
+	string subStr = test.substr(0, 1);
+	
 	//문자열 비교
 	string str1 = "apple";
 	string str2 = "banana";
@@ -90,8 +94,8 @@ void StringTest()
 void RunGrammer()
 {
 	
-	test();
-	return;
+	//test();
+	//return;
 	
 	StringTest();
 }
