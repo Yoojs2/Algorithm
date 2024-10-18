@@ -190,6 +190,81 @@ vector<int> FindDiver(int n)
 int main()
 {
 	
+	vector<string> keymap = { "ABACD", "BCEFD" };
+
+
+	map<char, int> m1;
+
+	
+	for (int i = 0; i < keymap.size(); i++)
+	{
+		for (int j = 0; j < keymap[i].size(); j++)
+		{
+			//존재하지 않으면
+			if (m1.find(keymap[i][j]) == m1.end())
+			{
+				m1[keymap[i][j]] = j + 1;
+				//m1.insert(pair<char, int>(keymap[i][j], j + 1));
+			}
+
+			else
+			{
+				if (m1[keymap[i][j]] > j + 1)
+				{
+					m1[keymap[i][j]] = j + 1;
+				}
+			}
+		}
+	}
+
+
+
+
+	int testbbbb = m1['C'];
+
+	
+
+
+	vector<int> aaaxxsa = { 0, 1, 2, 3, 4, 5, 6 };
+
+
+	for (const int& a : aaaxxsa)
+	{
+		cout << a << " , " << endl;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	int zzz = 10;
+	int xxx = 20;
+
+	if (zzz > xxx)
+	{
+		cout << "bp1" << endl;
+	}
+
+	else
+	{
+		cout << "bp2" << endl;
+	}
+	
+	
+	RunDataStructTest();
+	
+	
+	
+	
+	return 0;
+	
 	vector<int> aa = { 1, 2, 3, 4, 5, 6 };
 	
 	for (int i = 0; i < aa.size(); i++)

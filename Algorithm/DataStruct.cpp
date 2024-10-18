@@ -4,6 +4,7 @@
 #include <queue>
 #include <unordered_map>
 #include <utility>
+#include <map>
 
 using namespace std;
 
@@ -141,6 +142,52 @@ void QueueExample()
 }
 
 
+int map_Example()
+{
+	map<int, string> myMap;
+
+	// insert를 사용해 새로운 키-값 쌍 추가
+	myMap.insert(make_pair(1, "Apple"));
+	myMap.insert(make_pair(2, "Banana"));
+
+	
+	
+	string temString = myMap[1];
+	
+	
+	// 이미 존재하는 키는 삽입되지 않음
+	auto result = myMap.insert(make_pair(1, "Orange"));
+
+	// 삽입 결과 확인
+	if (!result.second) {
+		cout << "키 1은 이미 존재합니다. 삽입되지 않았습니다." << endl;
+	}
+
+	// 맵의 내용 출력
+	for (const auto& entry : myMap) {
+		cout << entry.first << ": " << entry.second << endl;
+	}
+
+	
+	map<int, string> m2;
+
+	//이렇게 삽입하면 중복되면 최신값으로 삽입되고
+	//m2[0] = "AAAA";
+
+	//이렇게 삽입하면 중복값으로 삽입하지 않는다.
+	m2.insert(pair<int, string>(1, "bbb"));
+	
+	
+	
+	
+	
+	
+	return 0;
+}
+
+
+
+
 
 int unordered_map_Example()
 {
@@ -183,5 +230,10 @@ int unordered_map_Example()
 
 void RunDataStructTest()
 {
+	
+	
+	map_Example();
+	return;
+	
 	VectorPairExample();
 }
