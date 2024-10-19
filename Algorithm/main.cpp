@@ -5,7 +5,7 @@
 #include "Practice.h"
 #include "Grammer.h"
 #include <map>
-
+#include <string>
 
 using namespace std;
 
@@ -190,156 +190,39 @@ vector<int> FindDiver(int n)
 int main()
 {
 	
-	vector<string> keymap = { "ABACD", "BCEFD" };
-
-
-	map<char, int> m1;
+		
+	string s = "threethreethree54";
 
 	
-	for (int i = 0; i < keymap.size(); i++)
+	int pos2 = s.find("three", 10);
+
+	
+	
+	vector<string> array = {"zero", "one", "two", "three", "four", "five", 
+		"six", "seven", "eight", "nine"};
+
+	for (int i = 0; i < array.size(); i++)
 	{
-		for (int j = 0; j < keymap[i].size(); j++)
+		int pos = s.find(array[i]);
+
+
+		while (pos != string::npos)
 		{
-			//존재하지 않으면
-			if (m1.find(keymap[i][j]) == m1.end())
-			{
-				m1[keymap[i][j]] = j + 1;
-				//m1.insert(pair<char, int>(keymap[i][j], j + 1));
-			}
+			s.replace(pos, array[i].size(), to_string(i));
 
-			else
-			{
-				if (m1[keymap[i][j]] > j + 1)
-				{
-					m1[keymap[i][j]] = j + 1;
-				}
-			}
-		}
-	}
-
-
-
-
-	int testbbbb = m1['C'];
-
-	
-
-
-	vector<int> aaaxxsa = { 0, 1, 2, 3, 4, 5, 6 };
-
-
-	for (const int& a : aaaxxsa)
-	{
-		cout << a << " , " << endl;
-	}
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	int zzz = 10;
-	int xxx = 20;
-
-	if (zzz > xxx)
-	{
-		cout << "bp1" << endl;
-	}
-
-	else
-	{
-		cout << "bp2" << endl;
-	}
-	
-	
-	RunDataStructTest();
-	
-	
-	
-	
-	return 0;
-	
-	vector<int> aa = { 1, 2, 3, 4, 5, 6 };
-	
-	for (int i = 0; i < aa.size(); i++)
-	{
-		if (aa[i] == 2)
-		{
-			i = 0;
-		}
-
-		cout << aa[i] << endl;
-	}
-	
-	
-	
-	
-	
-	RunGrammer();
-	
-	return 0;
-	
-	vector<int> result = FindDiver(18);
-
-	for (auto i : result)
-	{
-		cout << i << " , " ;
-	}
-	
-	
-	
-	
-	
-	RunDataStructTest();
-
-	return 0;
-	
-	//------완전 탐새 3중 루프---------//
-	vector<int> number = { -2, 3, 0, 2, -5 };
-
-	int answer2 = solution22(number);
-	//-----------------------------//
-	
-	
-	
-	std::vector<std::vector<std::string>> data = {
-		{ "AAA", "BBB", "CCC" },
-		{ "가가가", "나나나", "다다다" },
-		{ "111", "222", "333" }
-	};
-	
-	
-	for (int i = 0; i < data.size(); i++)
-	{
-		for (int j = 0; j < data[i].size(); j++)
-		{
-			std::cout << data[i][j] << " ";
-		}
-
-		//std::cout << std::endl;
-	}
-	
-	
-	
-	for (size_t i = 1; i < 3; i++)
-	{	
-		for (size_t j = 10; j < 13; j++)
-		{		
-			for (size_t k = 20; k < 23; k++)
-			{
-				std::cout << "i: " << i << ", j: " << j << ", k: " << k << std::endl;	
-			}
+			//index는 5부터 		
+			pos = s.find(array[i], pos + 1);
 		}
 	}
 	
+
+
+
+	cout << s << endl;
+
 	
 	return 0;
+	
 
 	
 	

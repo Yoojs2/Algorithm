@@ -142,6 +142,8 @@ void QueueExample()
 }
 
 
+//key 값을 오름차순으로 정렬된 상태로 저장
+//삽입 순서가 아님
 int map_Example()
 {
 	map<int, string> myMap;
@@ -188,7 +190,7 @@ int map_Example()
 
 
 
-
+//삽입순서와 정렬 아무것도 보장하지 않음 
 int unordered_map_Example()
 {
 	// 1.선언
