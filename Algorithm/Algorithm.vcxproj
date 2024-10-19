@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Algorithm.cpp" />
     <ClCompile Include="DataStruct.cpp" />
+    <ClCompile Include="DeadLockExample.cpp" />
     <ClCompile Include="Grammer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Practice.cpp" />
@@ -138,6 +139,7 @@
   <ItemGroup>
     <ClInclude Include="Algorithm.h" />
     <ClInclude Include="DataStruct.h" />
+    <ClInclude Include="DeadLockExample.h" />
     <ClInclude Include="Grammer.h" />
     <ClInclude Include="Practice.h" />
     <ClInclude Include="Semaphore.h" />
