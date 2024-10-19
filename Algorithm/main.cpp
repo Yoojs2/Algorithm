@@ -196,6 +196,8 @@ int main()
 	
 	int pos2 = s.find("three", 10);
 
+	//sdf
+
 	/////
 	
 	vector<string> array = {"zero", "one", "two", "three", "four", "five", 
