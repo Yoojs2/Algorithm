@@ -132,12 +132,14 @@
     <ClCompile Include="Grammer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Practice.cpp" />
+    <ClCompile Include="SharedMemory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithm.h" />
     <ClInclude Include="DataStruct.h" />
     <ClInclude Include="Grammer.h" />
     <ClInclude Include="Practice.h" />
+    <ClInclude Include="SharedMemory.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
