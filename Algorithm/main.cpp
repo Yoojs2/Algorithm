@@ -196,7 +196,7 @@ int main()
 	
 	int pos2 = s.find("three", 10);
 
-	
+	/////
 	
 	vector<string> array = {"zero", "one", "two", "three", "four", "five", 
 		"six", "seven", "eight", "nine"};
