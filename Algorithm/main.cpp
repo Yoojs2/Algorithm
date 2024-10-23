@@ -6,9 +6,6 @@
 #include "Grammer.h"
 #include <map>
 #include <string>
-#include "DeadLockExample.h"
-#include "SharedMemory.h"
-#include "Semaphore.h"
 
 
 using namespace std;
@@ -195,8 +192,6 @@ int main()
 {
 	
 		
-	
-	
 	string s = "threethreethree54";
 
 	
