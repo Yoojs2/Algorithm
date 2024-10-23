@@ -138,6 +138,7 @@
     <ClCompile Include="Practice.cpp" />
     <ClCompile Include="Semaphore.cpp" />
     <ClCompile Include="SharedMemory.cpp" />
+    <ClCompile Include="SmartPointer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithm.h" />
@@ -148,6 +149,7 @@
     <ClInclude Include="Practice.h" />
     <ClInclude Include="Semaphore.h" />
     <ClInclude Include="SharedMemory.h" />
+    <ClInclude Include="SmartPointer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

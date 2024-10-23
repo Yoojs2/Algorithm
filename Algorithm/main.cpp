@@ -6,7 +6,7 @@
 #include "Grammer.h"
 #include <map>
 #include <string>
-
+#include "SmartPointer.h"
 
 using namespace std;
 
@@ -192,6 +192,10 @@ int main()
 {
 	
 		
+	
+	RunStartPointerTest();
+	
+	
 	string s = "threethreethree54";
 
 	
