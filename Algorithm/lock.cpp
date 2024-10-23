@@ -10,7 +10,7 @@ void Critical_Section()
 	std::lock_guard<std::mutex> lock(mtx);
 		
 	std::cout << "Critical section\n";
-}// lock_guard가 소멸되면서 잠금 해제
+}// lock_guard가 소멸되면서 잠금 해제//
 
 
 void Critical_Section()
