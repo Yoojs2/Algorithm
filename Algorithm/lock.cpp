@@ -13,7 +13,7 @@ void Critical_Section()
 }// lock_guard가 소멸되면서 잠금 해제//
 
 
-void Critical_Section()
+void Critical_Section2()
 {
 	//생성과 함께 뮤텍스 잠금
 	std::unique_lock<std::mutex> lock(mtx);
