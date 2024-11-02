@@ -74,6 +74,7 @@ void StringTest()
 
 	string test = "banana";
 
+	//시작 Index부터 두번째 인자인 길이까지 
 	string subStr = test.substr(0, 1);
 	
 	//문자열 비교
