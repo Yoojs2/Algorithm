@@ -191,7 +191,9 @@ vector<int> FindDiver(int n)
 int main()
 {
 	
-		
+	RunDataStructTest();
+	
+	return 0;
 	
 	RunStartPointerTest();
 	

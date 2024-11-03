@@ -13,6 +13,18 @@ using namespace std;
 //메모리에 연속적으로 저장됨
 void VectorExample()
 {
+	
+	//중복 값 제거
+
+	std::vector<int> testVector = { 2,2,3,4,5,6 };
+
+	auto last = unique(testVector.begin(), testVector.end());
+
+	testVector.erase(last, testVector.end());
+	
+	
+	
+	
 	std::vector<int> scores = { 85, 90, 78, 92, 88 };
 
 	for (int i = 0; scores.size(); ++i)
@@ -22,6 +34,7 @@ void VectorExample()
 
 	scores[2] = 95;
 	std::cout << "\nAfter updation, Student 3 : " << scores[2] << " points\n";
+	
 }
 
 
@@ -234,6 +247,9 @@ void RunDataStructTest()
 {
 	
 	
+	VectorExample();
+	
+	return;
 	map_Example();
 	return;
 	
