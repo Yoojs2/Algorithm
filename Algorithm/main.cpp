@@ -188,51 +188,39 @@ vector<int> FindDiver(int n)
 
 
 
+string solution888(vector<string> participant, vector<string> completion) {
+	string answer = "";
+
+
+
+
+
+
+
+	return answer;
+}
+
+
+
+
 int main()
 {
 	
-	RunDataStructTest();
-	
-	return 0;
-	
-	RunStartPointerTest();
-	
-	
-	string s = "threethreethree54";
 
 	
-	int pos2 = s.find("three", 10);
-
-	//sdf
-
-	/////
-	
-	vector<string> array = {"zero", "one", "two", "three", "four", "five", 
-		"six", "seven", "eight", "nine"};
-
-	for (int i = 0; i < array.size(); i++)
-	{
-		int pos = s.find(array[i]);
-
-
-		while (pos != string::npos)
-		{
-			s.replace(pos, array[i].size(), to_string(i));
-
-			//index´Â 5ºÎÅÍ 		
-			pos = s.find(array[i], pos + 1);
-		}
-	}
 	
 
-
-
-	cout << s << endl;
-
 	
-	return 0;
 	
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 
