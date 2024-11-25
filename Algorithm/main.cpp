@@ -206,34 +206,32 @@ string solution888(vector<string> participant, vector<string> completion) {
 int main()
 {
 	
+	vector<string> testString = { "aaa", "bbb" };
 
 	
+	swap(testString[0], testString[1]);
 	
+	
+	for (string s : testString)
+	{
+		cout << s << endl;
+	}
+	
+	
+	
+	
+	
+	vector<int> input = { 10 };
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	auto it = min_element(input.begin(), input.end());
 
-	
-	
-	
-	
-	
-	
-	
-
-	
+	input.erase(it);
 		
+	
+	if (input.size() < 1)
+	{
+		input.push_back(-1);
+	}
 	
 	RunPractice();
 
